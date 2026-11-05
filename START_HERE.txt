@@ -20,4 +20,4 @@ python -m http.server 8000 --directory dist
 
 浏览器打开 http://localhost:8000
 
-微信 zheng25360；GitHub https://github.com/nicoliustudio/TrendRadar-ORBIT
+微信 zheng25360；GitHub https://github.com/heyjikang/TrendRadar-ORBIT

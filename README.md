@@ -132,7 +132,7 @@ draft: false
 
 第一个项目 `TrendRadar-ORBIT` 保留了定制的「轨道星图」动态视觉。后面新增的项目自动使用更简洁的文字海报设计，也可继续扩展模板。
 
-**项目说明的署名约定：** 当前作品使用你给出的 `nicoliustudio/TrendRadar-ORBIT` 仓库地址；该项目与开源项目 TrendRadar 有关联。设计中的 ORBIT 轨道图是概念插画，**不冒充真实软件截图**。
+**项目说明的署名约定：** 当前作品使用 `heyjikang/TrendRadar-ORBIT` 仓库地址；该项目与开源项目 TrendRadar 有关联。设计中的 ORBIT 轨道图是概念插画，**不冒充真实软件截图**。
 
 ## 05｜本地启动预览
 
