@@ -6,7 +6,7 @@
     <div class="article-smallhead"><span class="eyebrow"><i class="eyebrow-dot"></i> AN OPEN NOTEBOOK · {{ note.number }}</span><span>JIKANG'S MARGINALIA</span></div>
     <h1 itemprop="headline">{{ note.title }}</h1>
     <p class="article-description" itemprop="description">{{ note.description }}</p>
-    <div class="article-meta"><span>{{ note.category }}</span><time itemprop="datePublished" datetime="{{ note.date_iso }}">{{ note.display_date }}</time><span>约 {{ note.reading_time }} 分钟阅读</span>{% if note.sample %}<span class="article-sample">站点示例样稿</span>{% endif %}</div>
+    <div class="article-meta"><span>{{ site.name }}</span><span>{{ note.category }}</span><time itemprop="datePublished" datetime="{{ note.date_iso }}">{{ note.display_date }}</time><span>约 {{ note.reading_time }} 分钟阅读</span>{% if note.sample %}<span class="article-sample">站点示例样稿</span>{% endif %}</div>
     <div class="article-heading-flower" aria-hidden="true">✳</div>
   </div></header>
   <div class="article-main page-shell"><aside class="article-side"><span>FIELD NOTES<br>BY JIKANG</span><div class="article-side-line"></div><span>READING / {{ note.number }}</span><a href="{{ root }}notes/">← 返回文字档案</a></aside>

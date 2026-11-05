@@ -1,18 +1,18 @@
 # JIKANG 数字展馆 · 唯一配置入口
 site:
   brand: JIKANG
-  name: Jikang
+  name: 刘季康
   subtitle: 一个把好奇心做成现实的人
   # 绑定自定义域名后填写完整 URL，例如 https://jikang.example.com
   # 留空时 GitHub Actions 根据仓库名自动生成 Pages 地址。
   url: "https://liujikang.cn/"
-  description: 从交通工程走向 AI 应用开发。记录技术、创作、阅读与生活里的真实问题。
-  keywords: JIKANG,AI应用开发,智能体,算法工程师,个人博客,AI工具,TrendRadar-ORBIT
+  description: 刘季康（JIKANG），从交通工程走向 AI 应用开发。记录技术、创作、阅读与生活里的真实问题。
+  keywords: 刘季康,JIKANG,刘季康个人网站,AI应用开发,智能体,算法工程师,个人博客,AI工具,TrendRadar-ORBIT
   wechat: zheng25360
   github: https://github.com/heyjikang
   # 可在此替换站点主页的个人宣言
   hero_title_line1: 把好奇心，
   hero_title_line2: 做成现实。
-  hero_note: 我相信技术最终要回到生活。这里收藏我的作品、文章，以及那些值得认真思考的小问题。
+  hero_note: 我是刘季康（JIKANG）。我相信技术最终要回到生活。这里收藏我的作品、文章，以及那些值得认真思考的小问题。
   location: 在真实世界里，持续探索
   footer_note: 愿我们保持好奇，也保持行动。

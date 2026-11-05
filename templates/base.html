@@ -11,7 +11,7 @@
   <meta name="robots" content="{{ robots|default('index, follow') }}">
   <meta property="og:type" content="{{ og_type|default('website') }}">
   <meta property="og:locale" content="zh_CN">
-  <meta property="og:site_name" content="{{ site.brand }} · 个人观察档案">
+  <meta property="og:site_name" content="{{ site.name }} {{ site.brand }} · 个人观察档案">
   <meta property="og:title" content="{{ page_title }}">
   <meta property="og:description" content="{{ description }}">
   {% if canonical %}<link rel="canonical" href="{{ canonical }}"><meta property="og:url" content="{{ canonical }}">{% endif %}
@@ -61,7 +61,7 @@
     <div class="footer-bottom">
       <div class="footer-signature">J<span>.</span> <small>JIKANG'S PERSONAL ARCHIVE</small></div>
       <span>{{ site.footer_note }}</span>
-      <span>© <span id="year">2026</span> JIKANG · MADE WITH CURIOSITY</span>
+      <span>© <span id="year">2026</span> {{ site.name }} {{ site.brand }} · MADE WITH CURIOSITY</span>
     </div>
   </footer>
   <div class="toast" role="status" aria-live="polite"></div>

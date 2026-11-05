@@ -5,7 +5,6 @@ date: 2026-11-04
 category: AI 实践
 reading_time: 3
 description: 一个好用的 AI 应用，也许应该从一个非常普通的问题开始。
-sample: true
 featured: false
 number: "02"
 ---

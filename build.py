@@ -96,7 +96,7 @@ def load_notes() -> list[dict]:
 def schema(site: dict, base: str, note: dict | None = None) -> str:
     person = {
         '@context': 'https://schema.org', '@type': 'Person',
-        'name': site['name'], 'alternateName': site['brand'],
+        'name': site['name'], 'alternateName': [site['brand'], 'Jikang', 'liujikang'],
         'description': site['description'],
         'sameAs': [site['github']],
         'alumniOf': {'@type': 'CollegeOrUniversity', 'name': '长安大学'},
@@ -163,18 +163,18 @@ def main():
         file.write_text(env.get_template(template).render(**data), encoding='utf-8')
         print(f'  ✓ {relative}')
 
-    render('index.html', 'index.html', f'{site["brand"]} | {site["subtitle"]}', site['description'], './', notes=notes, projects=projects, project=projects[0] if projects else None, body_class='homepage')
+    render('index.html', 'index.html', f'{site["name"]} {site["brand"]} | {site["subtitle"]}', site['description'], './', notes=notes, projects=projects, project=projects[0] if projects else None, body_class='homepage')
     counts = {}
     for n in notes:
         counts[n['category']] = counts.get(n['category'], 0) + 1
     categories = [{'name': key, 'count': value} for key, value in counts.items()]
-    render('notes.html', 'notes/index.html', f'文字档案 | {site["brand"]}', '记录 AI 实践、成长与思考的文字档案。', '../', notes=notes, categories=categories, body_class='listing-page')
+    render('notes.html', 'notes/index.html', f'文字档案 | {site["name"]}', '记录 AI 实践、成长与思考的文字档案。', '../', notes=notes, categories=categories, body_class='listing-page')
     for n in notes:
         related = [other for other in notes if other['slug'] != n['slug']][:2]
-        render('article.html', f'notes/{n["slug"]}/index.html', f'{n["title"]} | {site["brand"]}', n['description'], '../../', note=n, related=related, robots='noindex, follow' if n['sample'] else 'index, follow', og_type='article', body_class='reading-page')
+        render('article.html', f'notes/{n["slug"]}/index.html', f'{n["title"]} | {site["name"]}', n['description'], '../../', note=n, related=related, robots='noindex, follow' if n['sample'] else 'index, follow', og_type='article', body_class='reading-page')
     for p in projects:
-        render('project.html', f'projects/{p["slug"]}/index.html', f'{p["title"]} {p["subtitle"]} | {site["brand"]}', p['description'], '../../', project=p, body_class='project-page')
-    render('404.html', '404.html', f'找不到这一页 | {site["brand"]}', '这一页尚未被写下。', './', body_class='error-page')
+        render('project.html', f'projects/{p["slug"]}/index.html', f'{p["title"]} {p["subtitle"]} | {site["name"]}', p['description'], '../../', project=p, body_class='project-page')
+    render('404.html', '404.html', f'找不到这一页 | {site["name"]}', '这一页尚未被写下。', './', body_class='error-page')
 
     urls = [''] + ['notes/'] + [f'notes/{n["slug"]}/' for n in notes if not n['sample']] + [f'projects/{p["slug"]}/' for p in projects]
     if base:

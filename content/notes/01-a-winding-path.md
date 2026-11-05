@@ -5,7 +5,6 @@ date: 2026-11-05
 category: 成长手记
 description: 从交通运输到 AI 应用开发，路径不是预先画好的；愿意迈出下一步，才让它慢慢清晰。
 reading_time: 3
-sample: true
 featured: true
 number: "01"
 ---

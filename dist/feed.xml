@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
 <title>JIKANG · 文字档案</title>
-<link>./</link>
-<description>从交通工程走向 AI 应用开发。记录技术、创作、阅读与生活里的真实问题。</description>
+<link>https://liujikang.cn/</link>
+<description>刘季康（JIKANG），从交通工程走向 AI 应用开发。记录技术、创作、阅读与生活里的真实问题。</description>
 <language>zh-cn</language>
+<item>
+<title>从一条不那么直的路，走向 AI</title><link>https://liujikang.cn/notes/a-winding-path/</link><guid>https://liujikang.cn/notes/a-winding-path/</guid>
+<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+<description><![CDATA[从交通运输到 AI 应用开发，路径不是预先画好的；愿意迈出下一步，才让它慢慢清晰。]]></description>
+</item>
+<item>
+<title>我更想造工具，而不是制造概念</title><link>https://liujikang.cn/notes/tools-in-real-life/</link><guid>https://liujikang.cn/notes/tools-in-real-life/</guid>
+<pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+<description><![CDATA[一个好用的 AI 应用，也许应该从一个非常普通的问题开始。]]></description>
+</item>
+<item>
+<title>学得快，不如让知识真的发生作用</title><link>https://liujikang.cn/notes/learning-by-making/</link><guid>https://liujikang.cn/notes/learning-by-making/</guid>
+<pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+<description><![CDATA[读书、学习和动手实践，最好形成一个小小的循环。]]></description>
+</item>
 </channel></rss>

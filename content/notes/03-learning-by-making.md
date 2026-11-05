@@ -5,7 +5,6 @@ date: 2026-11-03
 category: 思考笔记
 reading_time: 2
 description: 读书、学习和动手实践，最好形成一个小小的循环。
-sample: true
 featured: false
 number: "03"
 ---
