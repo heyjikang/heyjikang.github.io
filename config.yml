@@ -5,7 +5,7 @@ site:
   subtitle: 一个把好奇心做成现实的人
   # 绑定自定义域名后填写完整 URL，例如 https://jikang.example.com
   # 留空时 GitHub Actions 根据仓库名自动生成 Pages 地址。
-  url: ""
+  url: "https://liujikang.cn/"
   description: 从交通工程走向 AI 应用开发。记录技术、创作、阅读与生活里的真实问题。
   keywords: JIKANG,AI应用开发,智能体,算法工程师,个人博客,AI工具,TrendRadar-ORBIT
   wechat: zheng25360
