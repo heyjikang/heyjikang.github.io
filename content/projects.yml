@@ -1,0 +1,13 @@
+- slug: trendradar-orbit
+  number: "01"
+  title: TrendRadar
+  subtitle: ORBIT
+  eyebrow: SELECTED PROJECT / 001
+  category: AI 工具 · 开源探索
+  summary: 让信息从无序的流动中，逐渐显现轮廓。
+  description: 基于 TrendRadar 热点信息助手的 ORBIT 3D 相关探索。关注信息聚合、阅读效率与可视化呈现之间的关系。
+  role: 开源实践 / 项目探索
+  stack: [TrendRadar, ORBIT 3D, 信息聚合]
+  github: https://github.com/nicoliustudio/TrendRadar-ORBIT
+  original: https://github.com/sansan0/TrendRadar
+  note: 该仓库以 TrendRadar + ORBIT 3D 为定位。具体部署和功能说明请以 GitHub 仓库为准。

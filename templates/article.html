@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="article-page" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="article-header"><div class="page-shell">
+    <div class="article-breadcrumb"><a href="{{ root }}">首页</a><span>/</span><a href="{{ root }}notes/">文字</a><span>/</span><span>{{ note.category }}</span></div>
+    <div class="article-smallhead"><span class="eyebrow"><i class="eyebrow-dot"></i> AN OPEN NOTEBOOK · {{ note.number }}</span><span>JIKANG'S MARGINALIA</span></div>
+    <h1 itemprop="headline">{{ note.title }}</h1>
+    <p class="article-description" itemprop="description">{{ note.description }}</p>
+    <div class="article-meta"><span>{{ note.category }}</span><time itemprop="datePublished" datetime="{{ note.date_iso }}">{{ note.display_date }}</time><span>约 {{ note.reading_time }} 分钟阅读</span>{% if note.sample %}<span class="article-sample">站点示例样稿</span>{% endif %}</div>
+    <div class="article-heading-flower" aria-hidden="true">✳</div>
+  </div></header>
+  <div class="article-main page-shell"><aside class="article-side"><span>FIELD NOTES<br>BY JIKANG</span><div class="article-side-line"></div><span>READING / {{ note.number }}</span><a href="{{ root }}notes/">← 返回文字档案</a></aside>
+    <div class="article-prose" itemprop="articleBody">{{ note.html|safe }}</div>
+    <aside class="article-side article-side--right"><span>READ<br>THINK<br>MAKE</span><i>✳</i></aside>
+  </div>
+  <div class="article-end page-shell"><div class="article-end-inner"><div><span>THE END / 读完了</span><p>如果它恰好触动了你，<br>不妨分享给另一个人。</p></div><button class="copy-link" data-copy-url type="button">复制本篇链接 <span>↗</span></button></div></div>
+</article>
+<section class="more-notes page-shell"><div class="more-notes-title"><span>KEEP READING</span><h2>再读一点<span class="title-punctuation">.</span></h2></div><div class="more-notes-grid">{% for other in related %}<a href="{{ root }}notes/{{ other.slug }}/" class="related-note"><span>{{ other.category }} / {{ other.display_date }}</span><h3>{{ other.title }}</h3><span>READ NOTE ↗</span></a>{% endfor %}</div><a class="more-all" href="{{ root }}notes/">浏览全部文字 <span>↗</span></a></section>
+{% endblock %}

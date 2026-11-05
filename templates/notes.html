@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="listing-hero page-shell">
+  <div class="listing-back"><a href="{{ root }}">← 返回首页</a><span>THE PERSONAL ARCHIVE / VOL. 02</span></div>
+  <div class="eyebrow"><i class="eyebrow-dot"></i> AN OPEN NOTEBOOK</div>
+  <h1>文字<span class="italic-en">与</span>留白<span class="title-punctuation">.</span></h1>
+  <div class="listing-intro"><p>关于 AI、工作、学习和生活的一些记录。<br>没必要每句话都有结论，但值得认真写下。</p><span class="listing-sun" aria-hidden="true">✳</span></div>
+  <div class="listing-divider"><span>ALL WRITINGS / {{ notes|length }} NOTES</span><span>SCROLL TO READ ↓</span></div>
+</section>
+<section class="listing-body page-shell" data-note-filter>
+  <div class="listing-tools"><div class="filter-group" role="group" aria-label="文章分类"><button class="filter-chip is-active" data-category="all" type="button">全部 <span>{{ notes|length }}</span></button>{% for cat in categories %}<button class="filter-chip" data-category="{{ cat.name }}" type="button">{{ cat.name }} <span>{{ cat.count }}</span></button>{% endfor %}</div><label class="search-wrap"><span class="visually-hidden">搜索文章</span><span aria-hidden="true">⌕</span><input type="search" placeholder="搜索文字..." id="notes-search" autocomplete="off"></label></div>
+  <div class="archive-list">
+  {% for note in notes %}
+    <a class="archive-card" href="{{ note.slug }}/" data-note-item data-category="{{ note.category }}" data-search="{{ note.title }} {{ note.description }} {{ note.category }}">
+      <div class="archive-num">{{ note.number }}</div><div class="archive-card-main"><div class="archive-meta"><span>{{ note.category }}</span><time datetime="{{ note.date_iso }}">{{ note.display_date }}</time>{% if note.sample %}<span class="note-demo-tag">示例样稿</span>{% endif %}</div><h2>{{ note.title }}</h2><p>{{ note.description }}</p></div><span class="archive-arrow">↗</span>
+    </a>
+  {% endfor %}
+  </div><div class="archive-empty" hidden><span>✳</span><p>这一页暂时空白，换个关键词试试。</p></div>
+  <div class="archive-footer"><span>FOUND <b id="visible-count">{{ notes|length }}</b> OF {{ notes|length }}</span><span>TO BE CONTINUED — 未完待续。</span></div>
+</section>
+<section class="listing-outro"><div class="page-shell"><span>FROM READING TO MAKING</span><p>如果一个想法值得被写下，<br>也许它就值得被实践。</p><a href="{{ root }}#works">看看我在做什么 ↗</a></div></section>
+{% endblock %}

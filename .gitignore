@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+.DS_Store
+*.pyc
+
+# 个人背景原始资料，不随公开仓库发布
+references/
